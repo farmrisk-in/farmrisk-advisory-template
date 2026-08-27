@@ -1,0 +1,29 @@
+{
+  "name": "@farmrisk/advisory-template",
+  "version": "1.0.0",
+  "description": "Standalone cross-platform HTML advisory generator for FarmRisk mobile and web apps",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "tsc",
+    "prepare": "tsc",
+    "render": "bun renderSample.ts"
+  },
+  "keywords": [
+    "farmrisk",
+    "advisory",
+    "html-generator",
+    "pdf",
+    "report"
+  ],
+  "author": "FarmRisk",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
