@@ -3,9 +3,9 @@ export interface AdvisoryReportData {
     farmName: string;
     locationStr: string; // e.g. "Gandhinagar, Gujarat — 382355"
     coordinates: string; // e.g. "23.22°N, 72.70°E"
-    issuedDate: string;  // e.g. "Wed, 5 Aug 2026"
+    issuedDate: string; // e.g. "Wed, 5 Aug 2026"
     outlookPeriod: string; // e.g. "16-day outlook · Kharif season"
-    crop: string;        // e.g. "COTTON"
+    crop: string; // e.g. "COTTON"
   };
   whatToDoToday: Array<{
     icon: "drainage" | "irrigation" | "scout" | "remove" | string;
@@ -19,9 +19,9 @@ export interface AdvisoryReportData {
     outlookBadge: "FAVORABLE" | "CAUTIONARY" | "UNFAVORABLE";
   };
   cropCalendar: {
-    season: string;      // e.g. "KHARIF"
-    cropName: string;    // e.g. "COTTON"
-    currentStage: string;// e.g. "Flowering stage"
+    season: string; // e.g. "KHARIF"
+    cropName: string; // e.g. "COTTON"
+    currentStage: string; // e.g. "Flowering stage"
     activeStageType: "sow" | "growing" | "harvest";
   };
   weatherRisks: Array<{
@@ -42,7 +42,7 @@ export interface AdvisoryReportData {
     irrigationNote: string;
     soilTransition: {
       fromState: string; // "Moderate Wet"
-      toState: string;   // "Abnormally Wet"
+      toState: string; // "Abnormally Wet"
       trendSummary: string;
     };
   };
@@ -59,6 +59,8 @@ export interface AdvisoryReportData {
 // ── HUGEICONS SVG DICTIONARY (STROKE-BASED, 24x24 VIEWBOX) ───────────────────
 const HUGE_ICONS: Record<string, string> = {
   // Brand / Nature
+  logo: `<path d="M16 4C9 4 5 9 5 16c0 6 4 11 11 12 0-9 3-14 10-17-3-4-7-7-10-7Z" fill="#3FA372"/>
+    <path d="M16 28C11 20 12 12 16 6" stroke="#0F4C3A" stroke-width="1.6" stroke-linecap="round"/>`,
   plant: `<path d="M18 10C18 10 12 14 12 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" /><path d="M9.34882 11.1825C7.73784 12.3891 5.44323 12.26 3.9785 10.7953C1.55484 8.37164 2.03957 3.03957 2.03957 3.03957C2.03957 3.03957 7.37164 2.55484 9.7953 4.9785C10.7548 5.93803 11.1412 7.25369 10.9543 8.5" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" /><path d="M14.9638 12.8175C13.644 11.3832 13.6797 9.14983 15.0708 7.75867C17.2252 5.6043 21.9648 6.03517 21.9648 6.03517C21.9648 6.03517 22.3957 10.7748 20.2413 12.9292C19.4877 13.6828 18.487 14.0386 17.5 13.9967" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" /><path d="M6 7C6 7 12 12 12 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />`,
   // Section Headers
   checkList: `<path d="M11 6L21 6" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" /><path d="M11 12L21 12" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" /><path d="M11 18L21 18" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" /><path d="M3 7.39286C3 7.39286 4 8.04466 4.5 9C4.5 9 6 5.25 8 4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" /><path d="M3 18.3929C3 18.3929 4 19.0447 4.5 20C4.5 20 6 16.25 8 15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />`,
@@ -80,7 +82,11 @@ const HUGE_ICONS: Record<string, string> = {
   frost: `<path d="M21 14.25L20.1689 13.591C19.223 12.841 18.75 12.466 18.75 12C18.75 11.534 19.223 11.159 20.1689 10.409L21 9.75M3 9.75L3.83115 10.409C4.77705 11.159 5.25 11.534 5.25 12C5.25 12.466 4.77705 12.841 3.83115 13.591L3 14.25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" /><path d="M14.5718 21L14.7282 19.9412C14.9062 18.7362 14.9951 18.1337 15.4019 17.8986C15.8087 17.6635 16.3744 17.8876 17.5058 18.3358L18.5 18.7296M9.4282 3L9.27182 4.0588C9.09384 5.26379 9.00486 5.86629 8.59808 6.10139C8.1913 6.3365 7.62558 6.1124 6.49416 5.6642L5.5 5.27038" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" /><path d="M5 18.7317L6.07032 18.3375C7.2884 17.8889 7.89747 17.6645 8.33521 17.8994C8.77295 18.1343 8.86844 18.7367 9.05941 19.9414L9.22722 21M19 5.26825L17.9297 5.66249C16.7116 6.11115 16.1025 6.33548 15.6648 6.1006C15.2271 5.86571 15.1316 5.26333 14.9406 4.05859L14.7728 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" /><path d="M19 12.0003H5M15.5 17.9998L8.5 6M15.5 6.00025L8.5 18" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5" />`,
 };
 
-function renderSvgIcon(name: string, size: number = 18, color: string = "currentColor"): string {
+function renderSvgIcon(
+  name: string,
+  size: number = 18,
+  color: string = "black",
+): string {
   const content = HUGE_ICONS[name] || HUGE_ICONS.plant;
   return `<svg viewBox="0 0 24 24" width="${size}" height="${size}" fill="none" style="color:${color};flex-shrink:0;vertical-align:middle;">${content}</svg>`;
 }
@@ -164,8 +170,8 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
         break;
     }
 
-    return `<div class="action-icon-bubble" style="background:${bg};border-color:${border};color:${color};">
-      ${renderSvgIcon(type, 15, color)}
+    return `<div style="border-color:${border};color:${color};">
+      ${renderSvgIcon(type, 16, color)}
     </div>`;
   };
 
@@ -188,18 +194,16 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
     }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: #f1f5f9;
+      background-color: #000000;
       color: #0f172a;
       display: flex;
       justify-content: center;
-      padding: 24px;
     }
     .sheet {
       width: 794px; /* Standard A4 width at 96 DPI */
       min-height: 1123px;
       background: #ffffff;
-      padding: 26px 30px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+      padding: 22px 25px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -210,45 +214,35 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      border-bottom: 1.5px solid #e2e8f0;
-      padding-bottom: 14px;
-      margin-bottom: 14px;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
     }
     .brand-group {
       display: flex;
       align-items: center;
-      gap: 10px;
-    }
-    .brand-logo-wrap {
-      width: 38px;
-      height: 38px;
-      border-radius: 10px;
-      background: #ecfdf5;
-      border: 1.5px solid #a7f3d0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      gap: 8px;
     }
     .brand-title {
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 800;
-      letter-spacing: 0.8px;
       color: #064e3b;
-      line-height: 1.1;
     }
     .brand-sub {
-      font-size: 8.5px;
+      font-size: 10px;
       font-weight: 700;
-      letter-spacing: 1.8px;
-      color: #059669;
-      text-transform: uppercase;
+      color: #555;
       margin-top: 3px;
     }
     .farm-location {
-      font-size: 10.5px;
+      font-size: 11px;
       font-weight: 600;
       color: #334155;
       margin-top: 5px;
+    }
+    .dull {
+    color:#888;
+    font-weight: 500;
     }
     .header-right {
       text-align: right;
@@ -290,6 +284,8 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
       text-transform: uppercase;
       color: #334155;
       margin-bottom: 8px;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 8px;
     }
     .section-header .icon-wrap {
       display: flex;
@@ -307,14 +303,14 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
     .card {
       background: #ffffff;
       border: 1.5px solid #e2e8f0;
-      border-radius: 12px;
+      border-radius: 8px;
       padding: 13px 15px;
     }
 
     /* ── TOP 2-COLUMN GRID ── */
     .top-grid {
       display: grid;
-      grid-template-columns: 310px 1fr;
+      grid-template-columns: 280px 1fr;
       gap: 14px;
       margin-bottom: 14px;
     }
@@ -324,23 +320,18 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
       display: flex;
       flex-direction: column;
       gap: 10px;
+
     }
     .todo-item {
       display: flex;
       gap: 10px;
       align-items: flex-start;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 10px;
     }
-    .action-icon-bubble {
-      width: 26px;
-      height: 26px;
-      border-radius: 7px;
-      border-width: 1px;
-      border-style: solid;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      margin-top: 1px;
+    .todo-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
     }
     .todo-title {
       font-size: 11.5px;
@@ -595,22 +586,23 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
 <body>
   <div class="sheet">
     <div>
-      <!-- ── TOP HEADER ── -->
       <div class="header">
         <div>
           <div class="brand-group">
-            <div class="brand-logo-wrap">
-              ${renderSvgIcon("plant", 22, "#059669")}
-            </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="45" height="45" fill="none">
+                <path d="M16 4C9 4 5 9 5 16c0 6 4 11 11 12 0-9 3-14 10-17-3-4-7-7-10-7Z" fill="#3FA372"/>
+                <path d="M16 28C11 20 12 12 16 6" stroke="#0F4C3A" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+
             <div>
               <div class="brand-title">FARMRISK ADVISORY</div>
               <div class="brand-sub">CLIMATE INTELLIGENCE &amp; FIELD ACTION REPORT</div>
             </div>
           </div>
-          <div class="farm-location">${data.header.farmName}, ${data.header.locationStr} &nbsp;·&nbsp; ${data.header.coordinates}</div>
+          <div class="farm-location">${data.header.farmName}, ${data.header.locationStr} · <span class="dull">${data.header.coordinates}</span></div>
         </div>
         <div class="header-right">
-          <div class="issued-date">ISSUED ${data.header.issuedDate}</div>
+          <div class="issued-date"><span class="dull">ISSUED</span> ${data.header.issuedDate}</div>
           <div class="outlook-season">${data.header.outlookPeriod}</div>
           <div class="crop-badge">
             ${renderSvgIcon("plant", 12, "#ffffff")}
@@ -622,14 +614,16 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
       <!-- ── SECTION: 2-COLUMN OVERVIEW & TASKS ── -->
       <div class="top-grid">
         <!-- 1. WHAT TO DO TODAY -->
-        <div>
+        <div class="card">
           <div class="section-header">
-            <span class="icon-wrap">${renderSvgIcon("checkList", 16, "#059669")}</span>
+            <span class="icon-wrap">${renderSvgIcon("checkList", 16)}</span>
             WHAT TO DO TODAY
           </div>
-          <div class="card">
+          <div >
             <div class="todo-list">
-              ${data.whatToDoToday.map(item => `
+              ${data.whatToDoToday
+                .map(
+                  (item) => `
                 <div class="todo-item">
                   ${renderActionBadge(item.icon)}
                   <div style="flex:1;">
@@ -637,7 +631,9 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
                     <div class="todo-desc">${item.description}</div>
                   </div>
                 </div>
-              `).join("")}
+              `,
+                )
+                .join("")}
             </div>
           </div>
         </div>
@@ -654,7 +650,7 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
               <p>${data.aiOverview.soilSummary}</p>
               <p>
                 ${data.aiOverview.riskSummary} &nbsp;
-                Overall outlook: 
+                Overall outlook:
                 <span class="risk-badge" style="background:${getRiskBg(data.aiOverview.outlookBadge)};color:${getRiskColor(data.aiOverview.outlookBadge)};border-color:${getRiskBorder(data.aiOverview.outlookBadge)};">
                   ${data.aiOverview.outlookBadge}
                 </span>
@@ -692,11 +688,12 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
           WEATHER RISK
         </div>
         <div class="weather-risk-grid">
-          ${data.weatherRisks.map(risk => {
-            const color = getRiskColor(risk.level);
-            const bg = getRiskBg(risk.level);
-            const border = getRiskBorder(risk.level);
-            return `
+          ${data.weatherRisks
+            .map((risk) => {
+              const color = getRiskColor(risk.level);
+              const bg = getRiskBg(risk.level);
+              const border = getRiskBorder(risk.level);
+              return `
               <div class="weather-card">
                 <div class="weather-icon-bubble" style="background:${bg};border:1px solid ${border};color:${color};">
                   ${renderSvgIcon(risk.type, 18, color)}
@@ -708,7 +705,8 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
                 <div class="weather-desc">${risk.description}</div>
               </div>
             `;
-          }).join("")}
+            })
+            .join("")}
         </div>
       </div>
 
@@ -728,7 +726,9 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
             <div>
               <div class="farm-risk-context">${data.farmRisk.contextText}</div>
               <div class="todo-list">
-                ${data.farmRisk.actions.map(action => `
+                ${data.farmRisk.actions
+                  .map(
+                    (action) => `
                   <div class="todo-item">
                     ${renderActionBadge(action.icon)}
                     <div style="flex:1;">
@@ -736,7 +736,9 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
                       <div class="todo-desc">${action.description}</div>
                     </div>
                   </div>
-                `).join("")}
+                `,
+                  )
+                  .join("")}
               </div>
             </div>
             <div class="soil-panel">
@@ -759,10 +761,10 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
                 <!-- Zone Background Bands with subtle borders -->
                 <rect x="52" y="6" width="280" height="24" fill="#eff6ff" opacity="0.8" rx="3"/>
                 <line x1="52" y1="30" x2="332" y2="30" stroke="#dbeafe" stroke-width="1"/>
-                
+
                 <rect x="52" y="30" width="280" height="24" fill="#f0fdf4" opacity="0.8" />
                 <line x1="52" y1="54" x2="332" y2="54" stroke="#dcfce7" stroke-width="1"/>
-                
+
                 <rect x="52" y="54" width="280" height="24" fill="#fffbeb" opacity="0.8" rx="3"/>
 
                 <!-- Left Y-Axis Zone Labels (Clear, bold, no overlap) -->
@@ -784,7 +786,7 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
                 <!-- Rain Event Point -->
                 <line x1="240" y1="18" x2="240" y2="78" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2 2" />
                 <circle cx="240" cy="24" r="4" fill="#0284c7" stroke="#ffffff" stroke-width="1.5"/>
-                
+
                 <!-- Rain Event Callout Badge -->
                 <g transform="translate(216, 4)">
                   <rect x="0" y="0" width="48" height="14" rx="3" fill="#0284c7" />
@@ -813,7 +815,9 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
         </div>
         <div class="card">
           <div class="forecast-grid">
-            ${data.forecast16Day.map(day => `
+            ${data.forecast16Day
+              .map(
+                (day) => `
               <div class="forecast-col ${day.pcp >= 1 ? "rainy" : ""}">
                 <div class="forecast-date">${day.dateStr}</div>
                 <div class="forecast-day">${day.dayName}</div>
@@ -821,7 +825,9 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
                 <div class="forecast-low">${Math.round(day.tmin)}°</div>
                 <div class="forecast-rain">${day.pcp > 0 ? day.pcp.toFixed(1) : "·"}</div>
               </div>
-            `).join("")}
+            `,
+              )
+              .join("")}
           </div>
           <div class="forecast-footer-note">
             ${data.forecastSummaryFooter}
