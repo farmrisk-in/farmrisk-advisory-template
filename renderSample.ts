@@ -32,15 +32,9 @@ const sampleData: AdvisoryReportData = {
         "Inspect for aphids, jassids, whiteflies before they cross thresholds; apply 2% DAP / 1% KNO₃ for boll retention.",
     },
   ],
-  aiOverview: {
-    weatherSummary:
-      "Over the next 16 days, Farm (Gandhinagar) will see <b>23.4 mm of rainfall</b> over <b>3 rainy days</b>, with a light <b>13.5 mm fall expected around 04 Sep</b> (~10 days out). Temperatures range <b>25.6–34.9°C</b>; humidity stays high with moderate winds.",
-    soilSummary:
-      "Soil moisture shifts from <b>Moderate Wet to Abnormally Wet</b> by period end. At this <b>flowering stage</b>, prioritise drainage to prevent waterlogging; monitor sucking pests and apply <b>2% DAP or 1% KNO₃</b> to improve boll retention.",
-    riskSummary:
-      "Excess soil moisture is a significant risk to root health — monitor fields frequently for drainage needs.",
-    outlookBadge: "CAUTIONARY",
-  },
+  aiOverview:
+    "Over the next 16 days, Farm (Gandhinagar) will see <b>23.4 mm of rainfall</b> over <b>3 rainy days</b>, with a light <b>13.5 mm fall expected around 04 Sep</b> (~10 days out). Temperatures range <b>25.6–34.9°C</b>; humidity stays high with moderate winds. Soil moisture shifts from <b>Moderate Wet to Abnormally Wet</b> by period end. At this <b>flowering stage</b>, prioritise drainage to prevent waterlogging; monitor sucking pests and apply <b>2% DAP or 1% KNO₃</b> to improve boll retention.Excess soil moisture is a significant risk to root health — monitor fields frequently for drainage needs.",
+
   cropCalendar: {
     season: "KHARIF",
     cropName: "COTTON",

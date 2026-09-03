@@ -12,12 +12,7 @@ export interface AdvisoryReportData {
     title: string;
     description: string;
   }>;
-  aiOverview: {
-    weatherSummary: string;
-    soilSummary: string;
-    riskSummary: string;
-    outlookBadge: "FAVORABLE" | "CAUTIONARY" | "UNFAVORABLE";
-  };
+  aiOverview: string;
   cropCalendar: {
     season: string; // e.g. "KHARIF"
     cropName: string; // e.g. "COTTON"
@@ -278,9 +273,8 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
       display: flex;
       align-items: center;
       gap: 6px;
-      font-size: 11px;
+      font-size: 12px;
       font-weight: 800;
-      letter-spacing: 0.8px;
       text-transform: uppercase;
       color: #334155;
       margin-bottom: 8px;
@@ -349,9 +343,9 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
 
     /* ── AI OVERVIEW CONTENT ── */
     .ai-body {
-      font-size: 10.5px;
+      font-size: 11px;
       color: #334155;
-      line-height: 1.45;
+      line-height: 1.4;
     }
     .ai-body p {
       margin-bottom: 6px;
@@ -372,22 +366,7 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
     }
 
     /* ── CROP CALENDAR ── */
-    .calendar-container {
-      margin-top: 10px;
-      padding-top: 9px;
-      border-top: 1px solid #f1f5f9;
-    }
-    .calendar-title-row {
-      display: flex;
-      justify-content: space-between;
-      font-size: 9.5px;
-      font-weight: 700;
-      color: #475569;
-      margin-bottom: 5px;
-    }
-    .calendar-title-row b {
-      color: #065f46;
-    }
+
     .calendar-bar {
       display: flex;
       height: 18px;
@@ -640,38 +619,38 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
 
         <!-- 2. AI OVERVIEW -->
         <div>
-          <div class="section-header">
-            <span class="icon-wrap">${renderSvgIcon("bot", 16, "#059669")}</span>
-            AI OVERVIEW — 16-DAY OUTLOOK
-          </div>
           <div class="card">
-            <div class="ai-body">
-              <p>${data.aiOverview.weatherSummary}</p>
-              <p>${data.aiOverview.soilSummary}</p>
-              <p>
-                ${data.aiOverview.riskSummary} &nbsp;
-                Overall outlook:
-                <span class="risk-badge" style="background:${getRiskBg(data.aiOverview.outlookBadge)};color:${getRiskColor(data.aiOverview.outlookBadge)};border-color:${getRiskBorder(data.aiOverview.outlookBadge)};">
-                  ${data.aiOverview.outlookBadge}
-                </span>
-              </p>
+            <div class="section-header">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 7H11C8.19108 7 6.78661 7 5.77772 7.67412C5.34096 7.96596 4.96596 8.34096 4.67412 8.77772C4 9.78661 4 11.1911 4 14C4 16.8089 4 18.2134 4.67412 19.2223C4.96596 19.659 5.34096 20.034 5.77772 20.3259C6.78661 21 8.19108 21 11 21H13C15.8089 21 17.2134 21 18.2223 20.3259C18.659 20.034 19.034 19.659 19.3259 19.2223C20 18.2134 20 16.8089 20 14C20 11.1911 20 9.78661 19.3259 8.77772C19.034 8.34096 18.659 7.96596 18.2223 7.67412C17.2134 7 15.8089 7 13 7Z"></path>
+                <path d="M4 14H2"></path>
+                <path d="M10 17H14"></path>
+                <path d="M22 14H20"></path>
+                <path d="M15 11V13"></path>
+                <path d="M9 11V13"></path>
+                <path d="M12 7C12 5.11438 12 4.17157 11.4142 3.58579C10.8284 3 9.88562 3 8 3"></path>
+              </svg>
+                AI OVERVIEW — 16-DAY OUTLOOK
             </div>
+            <div class="ai-body">
+              ${data.aiOverview}
+            </div>
+          </div>
 
-            <!-- Crop Calendar -->
-            <div class="calendar-container">
-              <div class="calendar-title-row">
-                <span style="display:flex;align-items:center;gap:4px;">
-                  ${renderSvgIcon("calendar", 12, "#475569")}
-                  ${data.cropCalendar.season} CROP CALENDAR · ${data.cropCalendar.cropName}
-                </span>
-                <span>now at <b>${data.cropCalendar.currentStage}</b></span>
-              </div>
-              <div class="calendar-bar">
-                <div style="width: 25%; background: #94a3b8;">JAN–APR</div>
-                <div style="width: 12%; background: #059669;">SOW</div>
-                <div style="width: 28%; background: #d97706;">GROWING</div>
-                <div style="width: 20%; background: #dc2626;">HARVEST</div>
-                <div style="width: 15%; background: #94a3b8;">NOV–DEC</div>
+          <!-- Crop Calendar -->
+          <div class="card" style="margin-top:12px">
+            <div class="section-header">
+              <span style="display:flex;align-items:center;gap:4px;">
+                ${renderSvgIcon("calendar", 16)}
+                ${data.cropCalendar.season} Crop Calendar for <b>${data.cropCalendar.cropName}</b>
+              </span>
+            </div>
+            <div class="calendar-bar">
+              <div style="width: 25%; background: #A5B4C9;">JAN–APR</div>
+              <div style="width: 12%; background: #059669;">SOW</div>
+              <div style="width: 28%; background: #d97706;">GROWING</div>
+              <div style="width: 20%; background: #dc2626;">HARVEST</div>
+              <div style="width: 15%; background: #94a3b8;">NOV–DEC</div>
               </div>
               <div class="month-indicators">
                 <span>J</span><span>F</span><span>M</span><span>A</span><span>M</span><span>J</span><span>J</span><span>A</span><span>S</span><span>O</span><span>N</span><span>D</span>
@@ -679,7 +658,6 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
             </div>
           </div>
         </div>
-      </div>
 
       <!-- ── SECTION: WEATHER RISKS ── -->
       <div class="weather-risk-section">
