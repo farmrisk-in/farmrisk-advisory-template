@@ -59,7 +59,7 @@ const HUGE_ICONS: Record<string, string> = {
   plant: `<path d="M18 10C18 10 12 14 12 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" /><path d="M9.34882 11.1825C7.73784 12.3891 5.44323 12.26 3.9785 10.7953C1.55484 8.37164 2.03957 3.03957 2.03957 3.03957C2.03957 3.03957 7.37164 2.55484 9.7953 4.9785C10.7548 5.93803 11.1412 7.25369 10.9543 8.5" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" /><path d="M14.9638 12.8175C13.644 11.3832 13.6797 9.14983 15.0708 7.75867C17.2252 5.6043 21.9648 6.03517 21.9648 6.03517C21.9648 6.03517 22.3957 10.7748 20.2413 12.9292C19.4877 13.6828 18.487 14.0386 17.5 13.9967" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" /><path d="M6 7C6 7 12 12 12 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />`,
   // Section Headers
   checkList: `<path d="M11 6L21 6" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" /><path d="M11 12L21 12" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" /><path d="M11 18L21 18" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" /><path d="M3 7.39286C3 7.39286 4 8.04466 4.5 9C4.5 9 6 5.25 8 4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" /><path d="M3 18.3929C3 18.3929 4 19.0447 4.5 20C4.5 20 6 16.25 8 15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />`,
-  bot: `<path d="M17 13V8C17 5.23858 14.7614 3 12 3C9.23858 3 7 5.23858 7 8V13C7 14.8692 7 15.8038 7.40192 16.5C7.66523 16.9561 8.04394 17.3348 8.5 17.5981C9.19615 18 10.1308 18 12 18C13.8692 18 14.8038 18 15.5 17.5981C15.9561 17.3348 16.3348 16.9561 16.5981 16.5C17 15.8038 17 14.8692 17 13Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5" /><path d="M18 21C18 19.8954 18.8954 19 20 19C21.1046 19 22 19.8954 22 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" /><path d="M2 21C2 19.8954 2.89543 19 4 19C5.10457 19 6 19.8954 6 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" /><path d="M10.125 7.25H10M10.25 7.25C10.25 7.38807 10.1381 7.5 10 7.5C9.86193 7.5 9.75 7.38807 9.75 7.25C9.75 7.11193 9.86193 7 10 7C10.1381 7 10.25 7.11193 10.25 7.25Z" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" /><path d="M14.125 7.25H14M14.25 7.25C14.25 7.38807 14.1381 7.5 14 7.5C13.8619 7.5 13.75 7.38807 13.75 7.25C13.75 7.11193 13.8619 7 14 7C14.1381 7 14.25 7.11193 14.25 7.25Z" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" />`,
+  bot: `<path d="M13 7H11C8.19108 7 6.78661 7 5.77772 7.67412C5.34096 7.96596 4.96596 8.34096 4.67412 8.77772C4 9.78661 4 11.1911 4 14C4 16.8089 4 18.2134 4.67412 19.2223C4.96596 19.659 5.34096 20.034 5.77772 20.3259C6.78661 21 8.19108 21 11 21H13C15.8089 21 17.2134 21 18.2223 20.3259C18.659 20.034 19.034 19.659 19.3259 19.2223C20 18.2134 20 16.8089 20 14C20 11.1911 20 9.78661 19.3259 8.77772C19.034 8.34096 18.659 7.96596 18.2223 7.67412C17.2134 7 15.8089 7 13 7Z"></path><path d="M4 14H2"></path><path d="M10 17H14"></path><path d="M22 14H20"></path><path d="M15 11V13"></path><path d="M9 11V13"></path><path d="M12 7C12 5.11438 12 4.17157 11.4142 3.58579C10.8284 3 9.88562 3 8 3"></path>`,
   calendar: `<path d="M16 2V6M8 2V6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" /><path d="M13 4H11C7.22876 4 5.34315 4 4.17157 5.17157C3 6.34315 3 8.22876 3 12V14C3 17.7712 3 19.6569 4.17157 20.8284C5.34315 22 7.22876 22 11 22H13C16.7712 22 18.6569 22 19.8284 20.8284C21 19.6569 21 17.7712 21 14V12C21 8.22876 21 6.34315 19.8284 5.17157C18.6569 4 16.7712 4 13 4Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" /><path d="M3 10H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />`,
   alert: `<path d="M13.9248 21H10.0752C5.44476 21 3.12955 21 2.27636 19.4939C1.42317 17.9879 2.60736 15.9914 4.97574 11.9985L6.90057 8.75333C9.17559 4.91778 10.3131 3 12 3C13.6869 3 14.8244 4.91777 17.0994 8.75332L19.0243 11.9985C21.3926 15.9914 22.5768 17.9879 21.7236 19.4939C20.8704 21 18.5552 21 13.9248 21Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" /><path d="M12 9V13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" /><path d="M12.125 16.75H12M12.25 16.75C12.25 16.8881 12.1381 17 12 17C11.8619 17 11.75 16.8881 11.75 16.75C11.75 16.6119 11.8619 16.5 12 16.5C12.1381 16.5 12.25 16.6119 12.25 16.75Z" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" />`,
   bug: `<path d="M3.01309 4.99084C2.89323 6.05084 3.55249 8.42285 6.48923 8.42285" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" /><path d="M17.5951 8.38081C18.8357 8.57881 21.1132 7.49881 20.9957 5.00281" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" /><path d="M20.9928 20.9989C21.0528 19.9429 20.1777 17.5549 17.599 17.4229" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" /><path d="M6.45163 17.4708C5.65013 17.2308 3.01306 18.3348 3.01306 20.9988" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" /><path d="M9.3299 6.11884C9.35388 5.09884 9.84533 2.99884 12.0029 2.99884C13.9208 2.99884 14.5861 4.61884 14.676 6.11884M6.26131 9.41884C6.38118 8.63884 7.29216 6.81484 9.36586 6.63484C11.4635 6.55564 14.3403 6.58684 14.8797 6.67084C15.5869 6.73377 17.2951 7.43884 17.7506 9.41884C17.9124 10.4388 17.8285 11.8788 17.8524 12.7188C17.8165 13.5588 17.9207 15.2623 17.7565 16.1388C17.6367 17.0988 16.9894 18.4668 16.1024 19.3068C14.7838 20.7228 11.1639 22.2108 8.03534 19.4508C6.41713 17.8908 6.30925 16.3788 6.18939 15.7788C6.15725 15.4571 6.15875 13.8763 6.16541 12.3588C6.14144 11.046 6.17235 9.78063 6.26131 9.41884Z" stroke="currentColor" stroke-width="1.5" /><path d="M3.01306 12.8988H5.9498" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" /><path d="M20.9929 12.8988L18.1161 12.8988" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" />`,
@@ -79,7 +79,7 @@ const HUGE_ICONS: Record<string, string> = {
 
 function renderSvgIcon(
   name: string,
-  size: number = 18,
+  size: number = 16,
   color: string = "black",
 ): string {
   const content = HUGE_ICONS[name] || HUGE_ICONS.plant;
@@ -141,33 +141,23 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
     }
   };
 
-  const renderActionBadge = (type: string) => {
-    let bg = "#f1f5f9";
+  const renderActionIcon = (type: string) => {
     let color = "#475569";
-    let border = "#e2e8f0";
 
     switch (type) {
       case "drainage":
       case "irrigation":
-        bg = "#e0f2fe";
         color = "#0284c7";
-        border = "#bae6fd";
         break;
       case "scout":
-        bg = "#fef3c7";
         color = "#d97706";
-        border = "#fde68a";
         break;
       case "remove":
-        bg = "#fee2e2";
         color = "#dc2626";
-        border = "#fecaca";
         break;
     }
 
-    return `<div style="border-color:${border};color:${color};">
-      ${renderSvgIcon(type, 16, color)}
-    </div>`;
+    return renderSvgIcon(type, 16, color);
   };
 
   return `<!DOCTYPE html>
@@ -211,7 +201,7 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
       align-items: flex-start;
       border-bottom: 2px solid #e2e8f0;
       padding-bottom: 10px;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
     .brand-group {
       display: flex;
@@ -236,8 +226,8 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
       margin-top: 5px;
     }
     .dull {
-    color:#888;
-    font-weight: 500;
+      color: #888;
+      font-weight: 500;
     }
     .header-right {
       text-align: right;
@@ -268,7 +258,7 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
       box-shadow: 0 1px 3px rgba(6, 95, 70, 0.2);
     }
 
-    /* ── UNIFIED SECTION HEADERS (CONSISTENT OUTSIDE/CARD DESIGN) ── */
+    /* ── UNIFIED SECTION HEADERS ── */
     .section-header {
       display: flex;
       align-items: center;
@@ -281,32 +271,34 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
       border-bottom: 1px solid #e2e8f0;
       padding-bottom: 8px;
     }
-    .section-header .icon-wrap {
-      display: flex;
-      align-items: center;
-      color: #059669;
-    }
     .section-header-inline {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 8px;
       margin-bottom: 8px;
     }
+    .section-header-inline .section-header {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
 
-    /* ── CARD SURFACES (STANDARDIZED BORDER, PADDING, RADIUS) ── */
+    /* ── CARD SURFACES ── */
     .card {
       background: #ffffff;
       border: 1.5px solid #e2e8f0;
       border-radius: 8px;
-      padding: 13px 15px;
+      padding: 12px 14px;
     }
 
     /* ── TOP 2-COLUMN GRID ── */
     .top-grid {
       display: grid;
       grid-template-columns: 280px 1fr;
-      gap: 14px;
-      margin-bottom: 14px;
+      gap: 12px;
+      margin-bottom: 12px;
     }
 
     /* ── WHAT TO DO TODAY ITEMS ── */
@@ -314,7 +306,6 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
       display: flex;
       flex-direction: column;
       gap: 10px;
-
     }
     .todo-item {
       display: flex;
@@ -347,9 +338,6 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
       color: #334155;
       line-height: 1.4;
     }
-    .ai-body p {
-      margin-bottom: 6px;
-    }
     .ai-body b {
       color: #0f172a;
       font-weight: 700;
@@ -366,7 +354,6 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
     }
 
     /* ── CROP CALENDAR ── */
-
     .calendar-bar {
       display: flex;
       height: 18px;
@@ -388,10 +375,7 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
       padding: 3px 5px 0;
     }
 
-    /* ── WEATHER RISKS (5-COLUMN EQUAL CARDS) ── */
-    .weather-risk-section {
-      margin-bottom: 14px;
-    }
+    /* ── WEATHER RISKS ── */
     .weather-risk-grid {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
@@ -400,29 +384,23 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
     .weather-card {
       background: #ffffff;
       border: 1.5px solid #e2e8f0;
-      border-radius: 12px;
-      padding: 12px 9px;
+      border-radius: 8px;
+      padding: 9px 8px;
       text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      transition: all 0.2s ease;
     }
-    .weather-icon-bubble {
-      width: 36px;
-      height: 36px;
-      border-radius: 10px;
+    .weather-title {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 6px;
-    }
-    .weather-title {
+      gap: 4px;
       font-size: 11px;
       font-weight: 700;
       color: #1e293b;
-      margin-bottom: 4px;
+      margin-bottom: 5px;
     }
     .weather-badge {
       font-size: 8.5px;
@@ -431,7 +409,7 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
       padding: 2px 7px;
       border-radius: 5px;
       border: 1px solid transparent;
-      margin-bottom: 6px;
+      margin-bottom: 5px;
     }
     .weather-desc {
       font-size: 9px;
@@ -440,9 +418,6 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
     }
 
     /* ── FARM RISK: PEST, DISEASE & SOIL ── */
-    .farm-risk-section {
-      margin-bottom: 14px;
-    }
     .farm-risk-grid {
       display: grid;
       grid-template-columns: 1.08fr 0.92fr;
@@ -491,14 +466,11 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
     }
 
     /* ── 16-DAY FORECAST GRID ── */
-    .forecast-section {
-      margin-bottom: 12px;
-    }
     .forecast-grid {
       display: grid;
       grid-template-columns: repeat(16, 1fr);
       gap: 3.5px;
-      margin-top: 6px;
+      margin-top: 4px;
     }
     .forecast-col {
       border: 1.5px solid #e2e8f0;
@@ -568,11 +540,10 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
       <div class="header">
         <div>
           <div class="brand-group">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="45" height="45" fill="none">
-                <path d="M16 4C9 4 5 9 5 16c0 6 4 11 11 12 0-9 3-14 10-17-3-4-7-7-10-7Z" fill="#3FA372"/>
-                <path d="M16 28C11 20 12 12 16 6" stroke="#0F4C3A" stroke-width="1.6" stroke-linecap="round"/>
-              </svg>
-
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="45" height="45" fill="none">
+              <path d="M16 4C9 4 5 9 5 16c0 6 4 11 11 12 0-9 3-14 10-17-3-4-7-7-10-7Z" fill="#3FA372"/>
+              <path d="M16 28C11 20 12 12 16 6" stroke="#0F4C3A" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
             <div>
               <div class="brand-title">FARMRISK ADVISORY</div>
               <div class="brand-sub">CLIMATE INTELLIGENCE &amp; FIELD ACTION REPORT</div>
@@ -595,42 +566,32 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
         <!-- 1. WHAT TO DO TODAY -->
         <div class="card">
           <div class="section-header">
-            <span class="icon-wrap">${renderSvgIcon("checkList", 16)}</span>
+            ${renderSvgIcon("checkList", 16, "black")}
             WHAT TO DO TODAY
           </div>
-          <div >
-            <div class="todo-list">
-              ${data.whatToDoToday
-                .map(
-                  (item) => `
-                <div class="todo-item">
-                  ${renderActionBadge(item.icon)}
-                  <div style="flex:1;">
-                    <div class="todo-title">${item.title}</div>
-                    <div class="todo-desc">${item.description}</div>
-                  </div>
+          <div class="todo-list">
+            ${data.whatToDoToday
+              .map(
+                (item) => `
+              <div class="todo-item">
+                ${renderActionIcon(item.icon)}
+                <div style="flex:1;">
+                  <div class="todo-title">${item.title}</div>
+                  <div class="todo-desc">${item.description}</div>
                 </div>
-              `,
-                )
-                .join("")}
-            </div>
+              </div>
+            `,
+              )
+              .join("")}
           </div>
         </div>
 
-        <!-- 2. AI OVERVIEW -->
-        <div>
+        <!-- 2. AI OVERVIEW & CROP CALENDAR -->
+        <div style="display:flex;flex-direction:column;gap:12px;">
           <div class="card">
             <div class="section-header">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M13 7H11C8.19108 7 6.78661 7 5.77772 7.67412C5.34096 7.96596 4.96596 8.34096 4.67412 8.77772C4 9.78661 4 11.1911 4 14C4 16.8089 4 18.2134 4.67412 19.2223C4.96596 19.659 5.34096 20.034 5.77772 20.3259C6.78661 21 8.19108 21 11 21H13C15.8089 21 17.2134 21 18.2223 20.3259C18.659 20.034 19.034 19.659 19.3259 19.2223C20 18.2134 20 16.8089 20 14C20 11.1911 20 9.78661 19.3259 8.77772C19.034 8.34096 18.659 7.96596 18.2223 7.67412C17.2134 7 15.8089 7 13 7Z"></path>
-                <path d="M4 14H2"></path>
-                <path d="M10 17H14"></path>
-                <path d="M22 14H20"></path>
-                <path d="M15 11V13"></path>
-                <path d="M9 11V13"></path>
-                <path d="M12 7C12 5.11438 12 4.17157 11.4142 3.58579C10.8284 3 9.88562 3 8 3"></path>
-              </svg>
-                AI OVERVIEW — 16-DAY OUTLOOK
+              ${renderSvgIcon("bot", 16, "black")}
+              AI OVERVIEW — 16-DAY OUTLOOK
             </div>
             <div class="ai-body">
               ${data.aiOverview}
@@ -638,12 +599,10 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
           </div>
 
           <!-- Crop Calendar -->
-          <div class="card" style="margin-top:12px">
+          <div class="card">
             <div class="section-header">
-              <span style="display:flex;align-items:center;gap:4px;">
-                ${renderSvgIcon("calendar", 16)}
-                ${data.cropCalendar.season} Crop Calendar for <b>${data.cropCalendar.cropName}</b>
-              </span>
+              ${renderSvgIcon("calendar", 16, "black")}
+              ${data.cropCalendar.season} Crop Calendar for <b>${data.cropCalendar.cropName}</b>
             </div>
             <div class="calendar-bar">
               <div style="width: 25%; background: #A5B4C9;">JAN–APR</div>
@@ -651,18 +610,18 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
               <div style="width: 28%; background: #d97706;">GROWING</div>
               <div style="width: 20%; background: #dc2626;">HARVEST</div>
               <div style="width: 15%; background: #94a3b8;">NOV–DEC</div>
-              </div>
-              <div class="month-indicators">
-                <span>J</span><span>F</span><span>M</span><span>A</span><span>M</span><span>J</span><span>J</span><span>A</span><span>S</span><span>O</span><span>N</span><span>D</span>
-              </div>
+            </div>
+            <div class="month-indicators">
+              <span>J</span><span>F</span><span>M</span><span>A</span><span>M</span><span>J</span><span>J</span><span>A</span><span>S</span><span>O</span><span>N</span><span>D</span>
             </div>
           </div>
         </div>
+      </div>
 
       <!-- ── SECTION: WEATHER RISKS ── -->
-      <div class="weather-risk-section">
+      <div class="card" style="margin-bottom:12px;">
         <div class="section-header">
-          <span class="icon-wrap">${renderSvgIcon("alert", 16, "#d97706")}</span>
+          ${renderSvgIcon("alert", 16, "black")}
           WEATHER RISK
         </div>
         <div class="weather-risk-grid">
@@ -673,10 +632,10 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
               const border = getRiskBorder(risk.level);
               return `
               <div class="weather-card">
-                <div class="weather-icon-bubble" style="background:${bg};border:1px solid ${border};color:${color};">
-                  ${renderSvgIcon(risk.type, 18, color)}
+                <div class="weather-title">
+                  ${renderSvgIcon(risk.type, 14, color)}
+                  <span>${risk.title}</span>
                 </div>
-                <div class="weather-title">${risk.title}</div>
                 <div class="weather-badge" style="background:${bg};color:${color};border-color:${border};">
                   ${risk.level}
                 </div>
@@ -689,127 +648,123 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
       </div>
 
       <!-- ── SECTION: FARM RISK - PEST, DISEASE & SOIL ── -->
-      <div class="farm-risk-section">
+      <div class="card" style="margin-bottom:12px;">
         <div class="section-header-inline">
-          <div class="section-header" style="margin-bottom:0;">
-            <span class="icon-wrap">${renderSvgIcon("bug", 16, "#dc2626")}</span>
+          <div class="section-header">
+            ${renderSvgIcon("bug", 16, "black")}
             FARM RISK — PEST, DISEASE &amp; SOIL
           </div>
           <span class="risk-badge" style="background:${getRiskBg(data.farmRisk.overallLevel)};color:${getRiskColor(data.farmRisk.overallLevel)};border-color:${getRiskBorder(data.farmRisk.overallLevel)};">
             ${data.farmRisk.overallLevel}
           </span>
         </div>
-        <div class="card" style="margin-top:8px;">
-          <div class="farm-risk-grid">
-            <div>
-              <div class="farm-risk-context">${data.farmRisk.contextText}</div>
-              <div class="todo-list">
-                ${data.farmRisk.actions
-                  .map(
-                    (action) => `
-                  <div class="todo-item">
-                    ${renderActionBadge(action.icon)}
-                    <div style="flex:1;">
-                      <div class="todo-title">${action.title}</div>
-                      <div class="todo-desc">${action.description}</div>
-                    </div>
+        <div class="farm-risk-grid">
+          <div>
+            <div class="farm-risk-context">${data.farmRisk.contextText}</div>
+            <div class="todo-list">
+              ${data.farmRisk.actions
+                .map(
+                  (action) => `
+                <div class="todo-item">
+                  ${renderActionIcon(action.icon)}
+                  <div style="flex:1;">
+                    <div class="todo-title">${action.title}</div>
+                    <div class="todo-desc">${action.description}</div>
                   </div>
-                `,
-                  )
-                  .join("")}
-              </div>
+                </div>
+              `,
+                )
+                .join("")}
             </div>
-            <div class="soil-panel">
-              <div class="irrigation-pill">
-                ${renderSvgIcon("irrigation", 16, "#0284c7")}
-                <span>${data.farmRisk.irrigationNote}</span>
-              </div>
-              <div class="transition-title">
-                ${renderSvgIcon("chart", 15, "#0f172a")}
-                <span>${data.farmRisk.soilTransition.fromState} &rarr; ${data.farmRisk.soilTransition.toState}</span>
-              </div>
-              <svg viewBox="0 0 340 100" class="soil-chart-svg">
-                <defs>
-                  <linearGradient id="soilCurveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stop-color="#0284c7" stop-opacity="0.28" />
-                    <stop offset="100%" stop-color="#0284c7" stop-opacity="0.0" />
-                  </linearGradient>
-                </defs>
-
-                <!-- Zone Background Bands with subtle borders -->
-                <rect x="52" y="6" width="280" height="24" fill="#eff6ff" opacity="0.8" rx="3"/>
-                <line x1="52" y1="30" x2="332" y2="30" stroke="#dbeafe" stroke-width="1"/>
-
-                <rect x="52" y="30" width="280" height="24" fill="#f0fdf4" opacity="0.8" />
-                <line x1="52" y1="54" x2="332" y2="54" stroke="#dcfce7" stroke-width="1"/>
-
-                <rect x="52" y="54" width="280" height="24" fill="#fffbeb" opacity="0.8" rx="3"/>
-
-                <!-- Left Y-Axis Zone Labels (Clear, bold, no overlap) -->
-                <text x="44" y="22" font-size="8.5" fill="#1e40af" font-weight="800" text-anchor="end">ABN. WET</text>
-                <text x="44" y="46" font-size="8.5" fill="#166534" font-weight="800" text-anchor="end">MOD. WET</text>
-                <text x="44" y="70" font-size="8.5" fill="#b45309" font-weight="800" text-anchor="end">NORMAL</text>
-
-                <!-- Soil Moisture Area Fill -->
-                <path d="M 60 48 Q 140 45 220 28 T 325 15 L 325 78 L 60 78 Z" fill="url(#soilCurveGrad)" />
-
-                <!-- Trend Line -->
-                <path d="M 60 48 Q 140 45 220 28 T 325 15" fill="none" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round" />
-
-                <!-- Start Point ("NOW") -->
-                <circle cx="60" cy="48" r="3.5" fill="#0284c7" stroke="#ffffff" stroke-width="1.5"/>
-                <rect x="50" y="33" width="28" height="11" rx="2" fill="#0f172a"/>
-                <text x="64" y="41.5" font-size="7" fill="#ffffff" font-weight="800" text-anchor="middle">NOW</text>
-
-                <!-- Rain Event Point -->
-                <line x1="240" y1="18" x2="240" y2="78" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2 2" />
-                <circle cx="240" cy="24" r="4" fill="#0284c7" stroke="#ffffff" stroke-width="1.5"/>
-
-                <!-- Rain Event Callout Badge -->
-                <g transform="translate(216, 4)">
-                  <rect x="0" y="0" width="48" height="14" rx="3" fill="#0284c7" />
-                  <text x="24" y="10" font-size="8" fill="#ffffff" font-weight="800" text-anchor="middle">🌧 13.5 mm</text>
-                </g>
-
-                <!-- Bottom X-Axis Timeline Dates -->
-                <line x1="52" y1="78" x2="332" y2="78" stroke="#cbd5e1" stroke-width="1"/>
-                <text x="60" y="90" font-size="8" fill="#64748b" font-weight="600" text-anchor="middle">25 Aug</text>
-                <text x="120" y="90" font-size="8" fill="#64748b" font-weight="600" text-anchor="middle">28 Aug</text>
-                <text x="180" y="90" font-size="8" fill="#64748b" font-weight="600" text-anchor="middle">1 Sep</text>
-                <text x="240" y="90" font-size="8" fill="#0284c7" font-weight="800" text-anchor="middle">4 Sep</text>
-                <text x="325" y="90" font-size="8" fill="#64748b" font-weight="600" text-anchor="middle">9 Sep</text>
-              </svg>
-              <div class="todo-desc" style="margin-top:6px;">${data.farmRisk.soilTransition.trendSummary}</div>
+          </div>
+          <div class="soil-panel">
+            <div class="irrigation-pill">
+              ${renderSvgIcon("irrigation", 16, "#0284c7")}
+              <span>${data.farmRisk.irrigationNote}</span>
             </div>
+            <div class="transition-title">
+              ${renderSvgIcon("chart", 15, "#0f172a")}
+              <span>${data.farmRisk.soilTransition.fromState} &rarr; ${data.farmRisk.soilTransition.toState}</span>
+            </div>
+            <svg viewBox="0 0 340 100" class="soil-chart-svg">
+              <defs>
+                <linearGradient id="soilCurveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#0284c7" stop-opacity="0.28" />
+                  <stop offset="100%" stop-color="#0284c7" stop-opacity="0.0" />
+                </linearGradient>
+              </defs>
+
+              <!-- Zone Background Bands with subtle borders -->
+              <rect x="52" y="6" width="280" height="24" fill="#eff6ff" opacity="0.8" rx="3"/>
+              <line x1="52" y1="30" x2="332" y2="30" stroke="#dbeafe" stroke-width="1"/>
+
+              <rect x="52" y="30" width="280" height="24" fill="#f0fdf4" opacity="0.8" />
+              <line x1="52" y1="54" x2="332" y2="54" stroke="#dcfce7" stroke-width="1"/>
+
+              <rect x="52" y="54" width="280" height="24" fill="#fffbeb" opacity="0.8" rx="3"/>
+
+              <!-- Left Y-Axis Zone Labels (Clear, bold, no overlap) -->
+              <text x="44" y="22" font-size="8.5" fill="#1e40af" font-weight="800" text-anchor="end">ABN. WET</text>
+              <text x="44" y="46" font-size="8.5" fill="#166534" font-weight="800" text-anchor="end">MOD. WET</text>
+              <text x="44" y="70" font-size="8.5" fill="#b45309" font-weight="800" text-anchor="end">NORMAL</text>
+
+              <!-- Soil Moisture Area Fill -->
+              <path d="M 60 48 Q 140 45 220 28 T 325 15 L 325 78 L 60 78 Z" fill="url(#soilCurveGrad)" />
+
+              <!-- Trend Line -->
+              <path d="M 60 48 Q 140 45 220 28 T 325 15" fill="none" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round" />
+
+              <!-- Start Point ("NOW") -->
+              <circle cx="60" cy="48" r="3.5" fill="#0284c7" stroke="#ffffff" stroke-width="1.5"/>
+              <rect x="50" y="33" width="28" height="11" rx="2" fill="#0f172a"/>
+              <text x="64" y="41.5" font-size="7" fill="#ffffff" font-weight="800" text-anchor="middle">NOW</text>
+
+              <!-- Rain Event Point -->
+              <line x1="240" y1="18" x2="240" y2="78" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2 2" />
+              <circle cx="240" cy="24" r="4" fill="#0284c7" stroke="#ffffff" stroke-width="1.5"/>
+
+              <!-- Rain Event Callout Badge -->
+              <g transform="translate(216, 4)">
+                <rect x="0" y="0" width="48" height="14" rx="3" fill="#0284c7" />
+                <text x="24" y="10" font-size="8" fill="#ffffff" font-weight="800" text-anchor="middle">🌧 13.5 mm</text>
+              </g>
+
+              <!-- Bottom X-Axis Timeline Dates -->
+              <line x1="52" y1="78" x2="332" y2="78" stroke="#cbd5e1" stroke-width="1"/>
+              <text x="60" y="90" font-size="8" fill="#64748b" font-weight="600" text-anchor="middle">25 Aug</text>
+              <text x="120" y="90" font-size="8" fill="#64748b" font-weight="600" text-anchor="middle">28 Aug</text>
+              <text x="180" y="90" font-size="8" fill="#64748b" font-weight="600" text-anchor="middle">1 Sep</text>
+              <text x="240" y="90" font-size="8" fill="#0284c7" font-weight="800" text-anchor="middle">4 Sep</text>
+              <text x="325" y="90" font-size="8" fill="#64748b" font-weight="600" text-anchor="middle">9 Sep</text>
+            </svg>
+            <div class="todo-desc" style="margin-top:6px;">${data.farmRisk.soilTransition.trendSummary}</div>
           </div>
         </div>
       </div>
 
       <!-- ── SECTION: 16-DAY FORECAST ── -->
-      <div class="forecast-section">
+      <div class="card">
         <div class="section-header">
-          <span class="icon-wrap">${renderSvgIcon("chart", 16, "#2563eb")}</span>
+          ${renderSvgIcon("chart", 16, "black")}
           16-DAY FORECAST — HIGH/LOW °C &amp; RAIN (MM)
         </div>
-        <div class="card">
-          <div class="forecast-grid">
-            ${data.forecast16Day
-              .map(
-                (day) => `
-              <div class="forecast-col ${day.pcp >= 1 ? "rainy" : ""}">
-                <div class="forecast-date">${day.dateStr}</div>
-                <div class="forecast-day">${day.dayName}</div>
-                <div class="forecast-high">${Math.round(day.tmax)}°</div>
-                <div class="forecast-low">${Math.round(day.tmin)}°</div>
-                <div class="forecast-rain">${day.pcp > 0 ? day.pcp.toFixed(1) : "·"}</div>
-              </div>
-            `,
-              )
-              .join("")}
-          </div>
-          <div class="forecast-footer-note">
-            ${data.forecastSummaryFooter}
-          </div>
+        <div class="forecast-grid">
+          ${data.forecast16Day
+            .map(
+              (day) => `
+            <div class="forecast-col ${day.pcp >= 1 ? "rainy" : ""}">
+              <div class="forecast-date">${day.dateStr}</div>
+              <div class="forecast-day">${day.dayName}</div>
+              <div class="forecast-high">${Math.round(day.tmax)}°</div>
+              <div class="forecast-low">${Math.round(day.tmin)}°</div>
+              <div class="forecast-rain">${day.pcp > 0 ? day.pcp.toFixed(1) : "·"}</div>
+            </div>
+          `,
+            )
+            .join("")}
+        </div>
+        <div class="forecast-footer-note">
+          ${data.forecastSummaryFooter}
         </div>
       </div>
     </div>
@@ -823,3 +778,4 @@ export function generateAdvisoryHtml(data: AdvisoryReportData): string {
 </body>
 </html>`;
 }
+
